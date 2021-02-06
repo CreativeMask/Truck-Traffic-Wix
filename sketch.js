@@ -59,8 +59,8 @@ var musicS;
 var lane1 = 76;
 var lane2 = 360;
 var lane3 = 654;
-var screenWidthH = 1536/2;
-var screenHeightH = 720/2;
+var screenWidthH = width/2;
+var screenHeightH = height/2;
 
 
 function preload() {
@@ -94,7 +94,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1536, 720);
+  createCanvas(1450, 600);
 
   road = createSprite(screenWidthH, screenHeightH, 400, 400);
   road.addImage("roa", roadI);
